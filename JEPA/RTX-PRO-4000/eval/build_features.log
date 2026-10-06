@@ -1,0 +1,64 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/587 [00:00<?, ?it/s]Loading weights: 100%|██████████| 587/587 [00:00<00:00, 7216.09it/s]
+[transformers] [1mVJEPA2Model LOAD REPORT[0m from: facebook/vjepa2-vitl-fpc16-256-ssv2
+Key                                                              | Status     |  | 
+-----------------------------------------------------------------+------------+--+-
+pooler.cross_attention_layer.cross_attn.k_proj.weight            | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+pooler.cross_attention_layer.layer_norm2.bias                    | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.out_proj.weight | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.mlp.fc1.bias              | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.mlp.fc2.bias              | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.layer_norm2.bias          | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.layer_norm1.bias          | UNEXPECTED |  | 
+pooler.query_tokens                                              | UNEXPECTED |  | 
+pooler.cross_attention_layer.layer_norm1.weight                  | UNEXPECTED |  | 
+pooler.cross_attention_layer.cross_attn.k_proj.bias              | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+pooler.cross_attention_layer.cross_attn.q_proj.bias              | UNEXPECTED |  | 
+pooler.cross_attention_layer.cross_attn.q_proj.weight            | UNEXPECTED |  | 
+classifier.weight                                                | UNEXPECTED |  | 
+pooler.cross_attention_layer.mlp.fc1.weight                      | UNEXPECTED |  | 
+pooler.cross_attention_layer.cross_attn.v_proj.weight            | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.layer_norm1.weight        | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+pooler.cross_attention_layer.layer_norm1.bias                    | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.layer_norm2.weight        | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.mlp.fc2.weight            | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+pooler.cross_attention_layer.layer_norm2.weight                  | UNEXPECTED |  | 
+pooler.cross_attention_layer.mlp.fc2.weight                      | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.mlp.fc1.weight            | UNEXPECTED |  | 
+pooler.cross_attention_layer.mlp.fc2.bias                        | UNEXPECTED |  | 
+pooler.cross_attention_layer.mlp.fc1.bias                        | UNEXPECTED |  | 
+classifier.bias                                                  | UNEXPECTED |  | 
+pooler.cross_attention_layer.cross_attn.v_proj.bias              | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+train 0/8000  2s
+train 500/8000  81s
+train 1000/8000  104s
+train 1500/8000  128s
+train 2000/8000  152s
+train 2500/8000  176s
+train 3000/8000  200s
+train 3500/8000  223s
+train 4000/8000  246s
+train 4500/8000  270s
+train 5000/8000  294s
+train 5500/8000  317s
+train 6000/8000  341s
+train 6500/8000  365s
+train 7000/8000  388s
+train 7500/8000  412s
+train done: present=0.63 done=0.32  435s
+val 0/1000  1s
+val 500/1000  31s
+val done: present=0.61 done=0.32  55s
+test 0/1000  1s
+test 500/1000  31s
+test done: present=0.64 done=0.31  54s

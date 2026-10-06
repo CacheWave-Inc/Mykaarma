@@ -1,0 +1,39 @@
+{
+ "present_accuracy": 0.9685714285714285,
+ "present_recall": 0.9840848806366048,
+ "present_false_alarm_on_no_target": 0.04953560371517028,
+ "box_mean_iou": 0.6976485252380371,
+ "FALSE_OK_when_no_target": 0.0,
+ "FALSE_OK_when_incomplete_or_badly_framed": 0.0391304347826087,
+ "OK_recall_on_good_shots": 0.8435374149659864,
+ "OK_precision": 0.9323308270676691,
+ "guidance_accuracy_when_a_move_is_needed": 0.7844827586206896,
+ "says_OK_by_kind": {
+  "framed": 0.7218934911242604,
+  "partial": 0.05392156862745098,
+  "far_near": 0.0,
+  "covered": 0.0,
+  "negative": 0.0
+ },
+ "guidance_matches_by_kind": {
+  "framed": 0.7751479289940828,
+  "partial": 0.7990196078431373,
+  "far_near": 0.803921568627451,
+  "negative": 0.9863013698630136
+ },
+ "covered_detected_as_COVERED": 0.967741935483871,
+ "bare_battery_wrongly_flagged_COVERED": 0.0,
+ "predicted_code_counts": {
+  "OK": 133,
+  "LEFT": 65,
+  "RIGHT": 46,
+  "UP": 13,
+  "DOWN": 21,
+  "CLOSER": 6,
+  "BACK": 97,
+  "NO_PLATE": 192,
+  "ADJUST": 6,
+  "COVERED": 121
+ },
+ "n_test": 700
+}

@@ -1,0 +1,65 @@
+{
+ "1": {
+  "users": 1,
+  "requests": 20,
+  "lat_median_ms": 730.8533191680908,
+  "lat_p95_ms": 731.1911940574646,
+  "service_median_ms": 730.3851842880249,
+  "refresh_median_s": 1.0001895427703857,
+  "refresh_p95_s": 1.0006898403167725
+ },
+ "2": {
+  "users": 2,
+  "requests": 40,
+  "lat_median_ms": 743.7036037445068,
+  "lat_p95_ms": 746.4568614959717,
+  "service_median_ms": 743.4079647064209,
+  "refresh_median_s": 1.0000889301300049,
+  "refresh_p95_s": 1.0037240982055664
+ },
+ "4": {
+  "users": 4,
+  "requests": 54,
+  "lat_median_ms": 1224.3696451187134,
+  "lat_p95_ms": 1488.2248163223267,
+  "service_median_ms": 743.238091468811,
+  "refresh_median_s": 1.494438648223877,
+  "refresh_p95_s": 1.51852548122406
+ },
+ "6": {
+  "users": 6,
+  "requests": 56,
+  "lat_median_ms": 1761.9221210479736,
+  "lat_p95_ms": 2200.4347443580627,
+  "service_median_ms": 743.1813478469849,
+  "refresh_median_s": 2.22952663898468,
+  "refresh_p95_s": 2.9731132984161377
+ },
+ "8": {
+  "users": 8,
+  "requests": 58,
+  "lat_median_ms": 2459.4907760620117,
+  "lat_p95_ms": 2944.0858483314514,
+  "service_median_ms": 743.3286905288696,
+  "refresh_median_s": 2.973098397254944,
+  "refresh_p95_s": 2.978796923160553
+ },
+ "10": {
+  "users": 10,
+  "requests": 60,
+  "lat_median_ms": 3188.5021924972534,
+  "lat_p95_ms": 3683.0538392066956,
+  "service_median_ms": 743.638277053833,
+  "refresh_median_s": 3.717732548713684,
+  "refresh_p95_s": 4.462195789813995
+ },
+ "12": {
+  "users": 12,
+  "requests": 62,
+  "lat_median_ms": 3913.5531187057495,
+  "lat_p95_ms": 4426.840448379516,
+  "service_median_ms": 743.1379556655884,
+  "refresh_median_s": 4.458640456199646,
+  "refresh_p95_s": 4.463800394535065
+ }
+}

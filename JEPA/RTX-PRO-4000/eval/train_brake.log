@@ -1,0 +1,46 @@
+/home/cw-biz1/vjepa-bench/train_obj.py:18: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+  X = torch.cat([torch.from_numpy(np.ascontiguousarray(f[i:i + 1000])).to(dev) for i in range(0, len(f), 1000)])
+loaded 9000 train / 500 val in 1s
+epoch  0 train_loss 0.691 val_loss 0.825 best 0.825
+epoch  5 train_loss 0.121 val_loss 0.167 best 0.137
+epoch 10 train_loss 0.021 val_loss 0.161 best 0.129
+epoch 15 train_loss 0.007 val_loss 0.170 best 0.129
+epoch 20 train_loss 0.005 val_loss 0.175 best 0.129
+epoch 25 train_loss 0.005 val_loss 0.180 best 0.129
+epoch 29 train_loss 0.005 val_loss 0.181 best 0.129
+{
+ "present_accuracy": 0.9757142857142858,
+ "present_recall": 0.9840909090909091,
+ "present_false_alarm_on_no_target": 0.038461538461538464,
+ "box_mean_iou": 0.7553731203079224,
+ "FALSE_OK_when_no_target": 0.0,
+ "FALSE_OK_when_incomplete_or_badly_framed": 0.017094017094017096,
+ "OK_recall_on_good_shots": 0.8640776699029126,
+ "OK_precision": 0.978021978021978,
+ "guidance_accuracy_when_a_move_is_needed": 0.815668202764977,
+ "says_OK_by_kind": {
+  "framed": 0.8066037735849056,
+  "partial": 0.046413502109704644,
+  "far_near": 0.0,
+  "negative": 0.0
+ },
+ "guidance_matches_by_kind": {
+  "framed": 0.8537735849056604,
+  "partial": 0.8270042194092827,
+  "far_near": 0.8166666666666667,
+  "negative": 1.0
+ },
+ "predicted_code_counts": {
+  "OK": 182,
+  "LEFT": 41,
+  "RIGHT": 28,
+  "UP": 41,
+  "DOWN": 36,
+  "CLOSER": 27,
+  "BACK": 73,
+  "NO_PLATE": 257,
+  "ADJUST": 15
+ },
+ "n_test": 700
+}
+total 46s

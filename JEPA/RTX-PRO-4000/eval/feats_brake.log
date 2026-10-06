@@ -1,0 +1,55 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/587 [00:00<?, ?it/s]Loading weights:   4%|▍         | 26/587 [00:00<00:02, 255.16it/s]Loading weights:   9%|▉         | 52/587 [00:00<00:02, 226.37it/s]Loading weights:  13%|█▎        | 76/587 [00:00<00:02, 195.45it/s]Loading weights:  18%|█▊        | 108/587 [00:00<00:02, 209.56it/s]Loading weights:  24%|██▍       | 140/587 [00:00<00:02, 215.39it/s]Loading weights:  29%|██▉       | 172/587 [00:00<00:01, 226.55it/s]Loading weights:  35%|███▍      | 204/587 [00:00<00:01, 222.96it/s]Loading weights:  40%|███▉      | 234/587 [00:01<00:01, 237.38it/s]Loading weights:  44%|████▍     | 259/587 [00:01<00:01, 232.33it/s]Loading weights: 100%|██████████| 587/587 [00:01<00:00, 477.93it/s]
+[transformers] [1mVJEPA2Model LOAD REPORT[0m from: facebook/vjepa2-vitl-fpc16-256-ssv2
+Key                                                              | Status     |  | 
+-----------------------------------------------------------------+------------+--+-
+pooler.self_attention_layers.{0, 1, 2}.mlp.fc2.bias              | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.mlp.fc1.weight            | UNEXPECTED |  | 
+pooler.cross_attention_layer.cross_attn.q_proj.bias              | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.out_proj.weight | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.layer_norm2.bias          | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+pooler.cross_attention_layer.cross_attn.v_proj.weight            | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.mlp.fc1.bias              | UNEXPECTED |  | 
+pooler.cross_attention_layer.mlp.fc2.weight                      | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+pooler.cross_attention_layer.layer_norm1.bias                    | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.mlp.fc2.weight            | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+pooler.cross_attention_layer.cross_attn.k_proj.weight            | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+pooler.cross_attention_layer.mlp.fc2.bias                        | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.layer_norm2.weight        | UNEXPECTED |  | 
+pooler.cross_attention_layer.layer_norm2.bias                    | UNEXPECTED |  | 
+classifier.bias                                                  | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+pooler.cross_attention_layer.layer_norm1.weight                  | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.layer_norm1.bias          | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.layer_norm1.weight        | UNEXPECTED |  | 
+pooler.cross_attention_layer.cross_attn.v_proj.bias              | UNEXPECTED |  | 
+pooler.cross_attention_layer.layer_norm2.weight                  | UNEXPECTED |  | 
+pooler.cross_attention_layer.mlp.fc1.bias                        | UNEXPECTED |  | 
+pooler.query_tokens                                              | UNEXPECTED |  | 
+pooler.cross_attention_layer.cross_attn.q_proj.weight            | UNEXPECTED |  | 
+pooler.cross_attention_layer.mlp.fc1.weight                      | UNEXPECTED |  | 
+pooler.cross_attention_layer.cross_attn.k_proj.bias              | UNEXPECTED |  | 
+classifier.weight                                                | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+brake train 0/9000 2s
+brake train 1000/9000 114s
+brake train 2000/9000 162s
+brake train 3000/9000 209s
+brake train 4000/9000 257s
+brake train 5000/9000 304s
+brake train 6000/9000 350s
+brake train 7000/9000 397s
+brake train 8000/9000 445s
+brake train done: present=0.62 done=0.30 493s
+brake val 0/500 0s
+brake val done: present=0.63 done=0.28 28s
+brake test 0/700 1s
+brake test done: present=0.63 done=0.29 38s

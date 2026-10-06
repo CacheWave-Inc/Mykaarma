@@ -1,0 +1,8 @@
+# Packages inside the Triton container (nvcr.io/nvidia/tritonserver:25.09-py3) that model.py needs.
+# Versions are the ones that were installed when this was deployed. The OpenCV version is not recorded for the container;
+# the training environment used opencv-python-headless 5.0.0.93.
+torch==2.14.1
+transformers==5.18.0
+numpy==2.5.3
+safetensors==0.8.0
+opencv-python-headless

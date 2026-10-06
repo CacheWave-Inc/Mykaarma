@@ -1,0 +1,25 @@
+name: "vjepa_inspect"
+backend: "python"
+max_batch_size: 0
+
+input [
+  {
+    name: "FRAMES"
+    data_type: TYPE_UINT8
+    dims: [ -1 ]
+  }
+]
+output [
+  {
+    name: "GUIDANCE"
+    data_type: TYPE_FP32
+    dims: [ 12 ]
+  }
+]
+
+instance_group [
+  {
+    kind: KIND_GPU
+    count: 1
+  }
+]

@@ -1,0 +1,263 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading facebook/vjepa2-vitl-fpc16-256-ssv2 ...
+Loading weights:   0%|          | 0/587 [00:00<?, ?it/s]Loading weights: 100%|██████████| 587/587 [00:00<00:00, 7248.83it/s]
+[transformers] [1mVJEPA2Model LOAD REPORT[0m from: facebook/vjepa2-vitl-fpc16-256-ssv2
+Key                                                              | Status     |  | 
+-----------------------------------------------------------------+------------+--+-
+pooler.self_attention_layers.{0, 1, 2}.mlp.fc1.weight            | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.k_proj.weight   | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.q_proj.weight   | UNEXPECTED |  | 
+pooler.cross_attention_layer.cross_attn.k_proj.weight            | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.mlp.fc2.bias              | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.layer_norm1.weight        | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.layer_norm1.bias          | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.k_proj.bias     | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.mlp.fc2.weight            | UNEXPECTED |  | 
+pooler.cross_attention_layer.mlp.fc2.weight                      | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.out_proj.weight | UNEXPECTED |  | 
+pooler.cross_attention_layer.cross_attn.k_proj.bias              | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.q_proj.bias     | UNEXPECTED |  | 
+classifier.weight                                                | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.v_proj.weight   | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.layer_norm2.bias          | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.layer_norm2.weight        | UNEXPECTED |  | 
+pooler.cross_attention_layer.cross_attn.v_proj.weight            | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.out_proj.bias   | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.mlp.fc1.bias              | UNEXPECTED |  | 
+pooler.cross_attention_layer.mlp.fc2.bias                        | UNEXPECTED |  | 
+pooler.self_attention_layers.{0, 1, 2}.self_attn.v_proj.bias     | UNEXPECTED |  | 
+pooler.cross_attention_layer.mlp.fc1.bias                        | UNEXPECTED |  | 
+pooler.cross_attention_layer.layer_norm1.bias                    | UNEXPECTED |  | 
+pooler.cross_attention_layer.layer_norm2.weight                  | UNEXPECTED |  | 
+classifier.bias                                                  | UNEXPECTED |  | 
+pooler.cross_attention_layer.layer_norm2.bias                    | UNEXPECTED |  | 
+pooler.cross_attention_layer.cross_attn.v_proj.bias              | UNEXPECTED |  | 
+pooler.cross_attention_layer.layer_norm1.weight                  | UNEXPECTED |  | 
+pooler.cross_attention_layer.cross_attn.q_proj.weight            | UNEXPECTED |  | 
+pooler.cross_attention_layer.cross_attn.q_proj.bias              | UNEXPECTED |  | 
+pooler.cross_attention_layer.mlp.fc1.weight                      | UNEXPECTED |  | 
+pooler.query_tokens                                              | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Loaded in 0.9s
+dur= 10s  frames= 40  median=   194.7 ms  mean=   192.5 ms  peak_mem=0.85 GB
+dur= 20s  frames= 80  median=   534.6 ms  mean=   534.6 ms  peak_mem=1.03 GB
+dur= 30s  frames=120  median=  1057.5 ms  mean=  1057.0 ms  peak_mem=1.22 GB
+dur= 40s  frames=160  median=  1728.9 ms  mean=  1728.2 ms  peak_mem=1.40 GB
+dur= 50s  frames=200  median=  2562.4 ms  mean=  2560.0 ms  peak_mem=1.58 GB
+dur= 60s  frames=240  median=  3559.4 ms  mean=  3557.8 ms  peak_mem=1.76 GB
+dur= 70s  frames=280  median=  4713.6 ms  mean=  4716.9 ms  peak_mem=1.95 GB
+dur= 80s  frames=320  median=  6034.4 ms  mean=  6034.5 ms  peak_mem=2.13 GB
+dur= 90s  frames=360  median=  7529.2 ms  mean=  7527.4 ms  peak_mem=2.32 GB
+dur=100s  frames=400  median=  9169.9 ms  mean=  9172.4 ms  peak_mem=2.50 GB
+dur=110s  frames=440  median= 10961.8 ms  mean= 10932.7 ms  peak_mem=2.68 GB
+dur=120s  frames=480  median= 12430.8 ms  mean= 12473.7 ms  peak_mem=2.87 GB
+dur=130s  frames=520  median= 14395.0 ms  mean= 14395.0 ms  peak_mem=3.05 GB
+dur=140s  frames=560  median= 16551.2 ms  mean= 16551.2 ms  peak_mem=3.23 GB
+dur=150s  frames=600  median= 18857.3 ms  mean= 18857.3 ms  peak_mem=3.42 GB
+dur=160s  frames=640  median= 21242.1 ms  mean= 21242.1 ms  peak_mem=3.60 GB
+dur=170s  frames=680  median= 23845.6 ms  mean= 23845.6 ms  peak_mem=3.78 GB
+dur=180s  frames=720  median= 26564.2 ms  mean= 26564.2 ms  peak_mem=3.97 GB
+
+Done. Results in bench_duration_results.json
+[
+ {
+  "duration_s": 10,
+  "n_frames": 40,
+  "mean_ms": 192.46587753295898,
+  "median_ms": 194.66853141784668,
+  "min_ms": 184.62276458740234,
+  "max_ms": 195.01185417175293,
+  "reps": 5,
+  "peak_mem_gb": 0.85,
+  "status": "ok"
+ },
+ {
+  "duration_s": 20,
+  "n_frames": 80,
+  "mean_ms": 534.576416015625,
+  "median_ms": 534.6283912658691,
+  "min_ms": 533.7321758270264,
+  "max_ms": 535.1376533508301,
+  "reps": 5,
+  "peak_mem_gb": 1.03,
+  "status": "ok"
+ },
+ {
+  "duration_s": 30,
+  "n_frames": 120,
+  "mean_ms": 1056.972885131836,
+  "median_ms": 1057.464599609375,
+  "min_ms": 1054.612159729004,
+  "max_ms": 1058.767557144165,
+  "reps": 5,
+  "peak_mem_gb": 1.22,
+  "status": "ok"
+ },
+ {
+  "duration_s": 40,
+  "n_frames": 160,
+  "mean_ms": 1728.1556606292725,
+  "median_ms": 1728.8613319396973,
+  "min_ms": 1719.2840576171875,
+  "max_ms": 1733.3390712738037,
+  "reps": 5,
+  "peak_mem_gb": 1.4,
+  "status": "ok"
+ },
+ {
+  "duration_s": 50,
+  "n_frames": 200,
+  "mean_ms": 2559.9862098693848,
+  "median_ms": 2562.448263168335,
+  "min_ms": 2548.1228828430176,
+  "max_ms": 2573.826789855957,
+  "reps": 5,
+  "peak_mem_gb": 1.58,
+  "status": "ok"
+ },
+ {
+  "duration_s": 60,
+  "n_frames": 240,
+  "mean_ms": 3557.7553272247314,
+  "median_ms": 3559.4232082366943,
+  "min_ms": 3540.0538444519043,
+  "max_ms": 3574.6407508850098,
+  "reps": 5,
+  "peak_mem_gb": 1.76,
+  "status": "ok"
+ },
+ {
+  "duration_s": 70,
+  "n_frames": 280,
+  "mean_ms": 4716.884930928548,
+  "median_ms": 4713.6054039001465,
+  "min_ms": 4709.806203842163,
+  "max_ms": 4727.243185043335,
+  "reps": 3,
+  "peak_mem_gb": 1.95,
+  "status": "ok"
+ },
+ {
+  "duration_s": 80,
+  "n_frames": 320,
+  "mean_ms": 6034.47429339091,
+  "median_ms": 6034.356117248535,
+  "min_ms": 6021.491765975952,
+  "max_ms": 6047.574996948242,
+  "reps": 3,
+  "peak_mem_gb": 2.13,
+  "status": "ok"
+ },
+ {
+  "duration_s": 90,
+  "n_frames": 360,
+  "mean_ms": 7527.39938100179,
+  "median_ms": 7529.1588306427,
+  "min_ms": 7509.315967559814,
+  "max_ms": 7543.723344802856,
+  "reps": 3,
+  "peak_mem_gb": 2.32,
+  "status": "ok"
+ },
+ {
+  "duration_s": 100,
+  "n_frames": 400,
+  "mean_ms": 9172.420263290405,
+  "median_ms": 9169.899225234985,
+  "min_ms": 9155.624151229858,
+  "max_ms": 9191.737413406372,
+  "reps": 3,
+  "peak_mem_gb": 2.5,
+  "status": "ok"
+ },
+ {
+  "duration_s": 110,
+  "n_frames": 440,
+  "mean_ms": 10932.73401260376,
+  "median_ms": 10961.83729171753,
+  "min_ms": 10860.730648040771,
+  "max_ms": 10975.634098052979,
+  "reps": 3,
+  "peak_mem_gb": 2.68,
+  "status": "ok"
+ },
+ {
+  "duration_s": 120,
+  "n_frames": 480,
+  "mean_ms": 12473.726352055868,
+  "median_ms": 12430.797576904297,
+  "min_ms": 12407.651662826538,
+  "max_ms": 12582.729816436768,
+  "reps": 3,
+  "peak_mem_gb": 2.87,
+  "status": "ok"
+ },
+ {
+  "duration_s": 130,
+  "n_frames": 520,
+  "mean_ms": 14395.042300224304,
+  "median_ms": 14395.042300224304,
+  "min_ms": 14386.255502700806,
+  "max_ms": 14403.829097747803,
+  "reps": 2,
+  "peak_mem_gb": 3.05,
+  "status": "ok"
+ },
+ {
+  "duration_s": 140,
+  "n_frames": 560,
+  "mean_ms": 16551.207900047302,
+  "median_ms": 16551.207900047302,
+  "min_ms": 16550.829887390137,
+  "max_ms": 16551.585912704468,
+  "reps": 2,
+  "peak_mem_gb": 3.23,
+  "status": "ok"
+ },
+ {
+  "duration_s": 150,
+  "n_frames": 600,
+  "mean_ms": 18857.301235198975,
+  "median_ms": 18857.301235198975,
+  "min_ms": 18842.904090881348,
+  "max_ms": 18871.6983795166,
+  "reps": 2,
+  "peak_mem_gb": 3.42,
+  "status": "ok"
+ },
+ {
+  "duration_s": 160,
+  "n_frames": 640,
+  "mean_ms": 21242.138743400574,
+  "median_ms": 21242.138743400574,
+  "min_ms": 21240.358591079712,
+  "max_ms": 21243.918895721436,
+  "reps": 2,
+  "peak_mem_gb": 3.6,
+  "status": "ok"
+ },
+ {
+  "duration_s": 170,
+  "n_frames": 680,
+  "mean_ms": 23845.555186271667,
+  "median_ms": 23845.555186271667,
+  "min_ms": 23834.90800857544,
+  "max_ms": 23856.202363967896,
+  "reps": 2,
+  "peak_mem_gb": 3.78,
+  "status": "ok"
+ },
+ {
+  "duration_s": 180,
+  "n_frames": 720,
+  "mean_ms": 26564.19837474823,
+  "median_ms": 26564.19837474823,
+  "min_ms": 26547.409534454346,
+  "max_ms": 26580.987215042114,
+  "reps": 2,
+  "peak_mem_gb": 3.97,
+  "status": "ok"
+ }
+]
