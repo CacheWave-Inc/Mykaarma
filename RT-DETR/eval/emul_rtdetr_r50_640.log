@@ -1,0 +1,12 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/764 [00:00<?, ?it/s]Loading weights:   0%|          | 0/764 [00:00<?, ?it/s]Loading weights: 100%|██████████| 764/764 [00:00<00:00, 15440.22it/s]
+Loading weights: 100%|██████████| 764/764 [00:00<00:00, 17838.46it/s]
+rtdetr_r50_640: 2 workers ready
+{"users": 1, "requests": 20, "lat_median_ms": 73.36306571960449, "lat_p95_ms": 73.5466718673706, "service_median_ms": 72.91626930236816, "refresh_median_s": 1.0000019073486328, "refresh_p95_s": 1.0002610206604003}
+{"users": 2, "requests": 40, "lat_median_ms": 75.82974433898926, "lat_p95_ms": 76.08563899993896, "service_median_ms": 75.48177242279053, "refresh_median_s": 1.0000892877578735, "refresh_p95_s": 1.0004679918289185}
+{"users": 4, "requests": 80, "lat_median_ms": 112.68234252929688, "lat_p95_ms": 150.2752423286438, "service_median_ms": 75.09791851043701, "refresh_median_s": 1.0000450611114502, "refresh_p95_s": 1.0004971027374268}
+{"users": 6, "requests": 120, "lat_median_ms": 149.83201026916504, "lat_p95_ms": 224.30431842803955, "service_median_ms": 74.96023178100586, "refresh_median_s": 1.0000320672988892, "refresh_p95_s": 1.0005552291870117}
+{"users": 8, "requests": 160, "lat_median_ms": 186.66088581085205, "lat_p95_ms": 298.31061363220215, "service_median_ms": 74.94950294494629, "refresh_median_s": 0.9999774694442749, "refresh_p95_s": 1.00068199634552}
+{"users": 10, "requests": 200, "lat_median_ms": 224.09498691558838, "lat_p95_ms": 373.012113571167, "service_median_ms": 74.7443437576294, "refresh_median_s": 1.0000437498092651, "refresh_p95_s": 1.000631046295166}
+{"users": 12, "requests": 240, "lat_median_ms": 261.5255117416382, "lat_p95_ms": 448.1348514556885, "service_median_ms": 74.82576370239258, "refresh_median_s": 0.9999885559082031, "refresh_p95_s": 1.000842571258545}

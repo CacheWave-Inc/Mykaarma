@@ -1,0 +1,37 @@
+{
+ "classes": [
+  "battery"
+ ],
+ "n_test": 800,
+ "box_mean_iou": 0.9643372868120376,
+ "threshold_sweep": {
+  "0.3": {
+   "ok_on_good": 0.9415204678362573,
+   "false_ok_bad": 0.011450381679389313,
+   "false_ok_none": 0.0,
+   "present_acc": 0.97625,
+   "guidance_acc_when_move_needed": 0.6867924528301886
+  },
+  "0.5": {
+   "ok_on_good": 0.9415204678362573,
+   "false_ok_bad": 0.011450381679389313,
+   "false_ok_none": 0.0,
+   "present_acc": 0.97625,
+   "guidance_acc_when_move_needed": 0.6830188679245283
+  },
+  "0.7": {
+   "ok_on_good": 0.9415204678362573,
+   "false_ok_bad": 0.011450381679389313,
+   "false_ok_none": 0.0,
+   "present_acc": 0.97375,
+   "guidance_acc_when_move_needed": 0.6679245283018868
+  },
+  "0.85": {
+   "ok_on_good": 0.9239766081871345,
+   "false_ok_bad": 0.011450381679389313,
+   "false_ok_none": 0.0,
+   "present_acc": 0.9675,
+   "guidance_acc_when_move_needed": 0.6566037735849056
+  }
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "classes": [
+  "battery_covered"
+ ],
+ "n_test": 800,
+ "box_mean_iou": 0.9399640415989722,
+ "threshold_sweep": {
+  "0.3": {
+   "covered_recall": 0.0,
+   "false_alarm_on_not_covered": 0.0,
+   "false_alarm_on_bare_battery": 0.0
+  },
+  "0.5": {
+   "covered_recall": 0.0,
+   "false_alarm_on_not_covered": 0.0,
+   "false_alarm_on_bare_battery": 0.0
+  },
+  "0.7": {
+   "covered_recall": 0.0,
+   "false_alarm_on_not_covered": 0.0,
+   "false_alarm_on_bare_battery": 0.0
+  },
+  "0.85": {
+   "covered_recall": 0.0,
+   "false_alarm_on_not_covered": 0.0,
+   "false_alarm_on_bare_battery": 0.0
+  }
+ }
+}

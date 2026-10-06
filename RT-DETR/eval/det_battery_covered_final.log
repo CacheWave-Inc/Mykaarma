@@ -1,0 +1,106 @@
+battery: 16000 train / 600 val loaded in 6s, classes=['battery_covered']
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] You passed `num_labels=1` which is incompatible to the `id2label` map of length `80`.
+Loading weights:   0%|          | 0/526 [00:00<?, ?it/s]Loading weights: 100%|██████████| 526/526 [00:00<00:00, 14232.75it/s]
+[transformers] [1mRTDetrForObjectDetection LOAD REPORT[0m from: PekingU/rtdetr_r18vd
+Key                                        | Status   |                                                                                        
+-------------------------------------------+----------+----------------------------------------------------------------------------------------
+model.decoder.class_embed.{0, 1, 2}.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([80]) vs model:torch.Size([1])          
+model.decoder.class_embed.{0, 1, 2}.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([80, 256]) vs model:torch.Size([1, 256])
+model.enc_score_head.weight                | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([80, 256]) vs model:torch.Size([1, 256])
+model.enc_score_head.bias                  | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([80]) vs model:torch.Size([1])          
+model.denoising_class_embed.weight         | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([81, 256]) vs model:torch.Size([2, 256])
+
+Notes:
+- MISMATCH:	ckpt weights were loaded, but they did not match the original empty weight shapes.
+  it 100/5000 loss 69.493 40s
+  it 200/5000 loss 9.166 72s
+  it 300/5000 loss 9.372 104s
+  it 400/5000 loss 6.336 138s
+  it 500/5000 loss 8.169 172s
+epoch 0 train_loss 8.169 val_loss 4.344 best 4.344 174s
+  it 600/5000 loss 6.362 208s
+  it 700/5000 loss 7.112 243s
+  it 800/5000 loss 7.716 275s
+  it 900/5000 loss 6.918 307s
+  it 1000/5000 loss 7.113 339s
+epoch 1 train_loss 7.113 val_loss 3.794 best 3.794 341s
+  it 1100/5000 loss 8.536 373s
+  it 1200/5000 loss 6.970 405s
+  it 1300/5000 loss 6.242 436s
+  it 1400/5000 loss 6.991 468s
+  it 1500/5000 loss 6.130 500s
+epoch 2 train_loss 6.130 val_loss 4.328 best 3.794 502s
+  it 1600/5000 loss 5.969 534s
+  it 1700/5000 loss 7.027 565s
+  it 1800/5000 loss 6.044 597s
+  it 1900/5000 loss 6.679 629s
+  it 2000/5000 loss 6.781 661s
+epoch 3 train_loss 6.781 val_loss 4.036 best 3.794 663s
+  it 2100/5000 loss 6.342 695s
+  it 2200/5000 loss 5.343 726s
+  it 2300/5000 loss 5.751 758s
+  it 2400/5000 loss 5.275 789s
+  it 2500/5000 loss 7.257 821s
+epoch 4 train_loss 7.257 val_loss 3.819 best 3.794 823s
+  it 2600/5000 loss 10.232 855s
+  it 2700/5000 loss 6.034 886s
+  it 2800/5000 loss 6.826 918s
+  it 2900/5000 loss 7.745 950s
+  it 3000/5000 loss 7.065 982s
+epoch 5 train_loss 7.065 val_loss 3.908 best 3.794 984s
+  it 3100/5000 loss 5.738 1015s
+  it 3200/5000 loss 5.200 1047s
+  it 3300/5000 loss 6.191 1079s
+  it 3400/5000 loss 6.134 1111s
+  it 3500/5000 loss 6.485 1143s
+epoch 6 train_loss 6.485 val_loss 3.889 best 3.794 1145s
+  it 3600/5000 loss 7.562 1176s
+  it 3700/5000 loss 5.580 1208s
+  it 3800/5000 loss 5.857 1240s
+  it 3900/5000 loss 5.769 1272s
+  it 4000/5000 loss 5.498 1303s
+epoch 7 train_loss 5.498 val_loss 3.921 best 3.794 1305s
+  it 4100/5000 loss 5.753 1337s
+  it 4200/5000 loss 5.400 1369s
+  it 4300/5000 loss 4.889 1401s
+  it 4400/5000 loss 5.752 1433s
+  it 4500/5000 loss 5.340 1464s
+epoch 8 train_loss 5.340 val_loss 3.911 best 3.794 1466s
+  it 4600/5000 loss 5.719 1498s
+  it 4700/5000 loss 5.735 1530s
+  it 4800/5000 loss 6.328 1562s
+  it 4900/5000 loss 5.702 1594s
+  it 5000/5000 loss 4.796 1626s
+epoch 9 train_loss 4.796 val_loss 3.912 best 3.794 1627s
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 24.68it/s]
+{
+ "classes": [
+  "battery_covered"
+ ],
+ "n_test": 800,
+ "box_mean_iou": 0.9399640415989722,
+ "threshold_sweep": {
+  "0.3": {
+   "covered_recall": 0.0,
+   "false_alarm_on_not_covered": 0.0,
+   "false_alarm_on_bare_battery": 0.0
+  },
+  "0.5": {
+   "covered_recall": 0.0,
+   "false_alarm_on_not_covered": 0.0,
+   "false_alarm_on_bare_battery": 0.0
+  },
+  "0.7": {
+   "covered_recall": 0.0,
+   "false_alarm_on_not_covered": 0.0,
+   "false_alarm_on_bare_battery": 0.0
+  },
+  "0.85": {
+   "covered_recall": 0.0,
+   "false_alarm_on_not_covered": 0.0,
+   "false_alarm_on_bare_battery": 0.0
+  }
+ }
+}
+total 1631s

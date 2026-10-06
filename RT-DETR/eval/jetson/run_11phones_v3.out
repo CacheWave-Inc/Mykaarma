@@ -1,0 +1,9 @@
+--- real phone during: alone (baseline)
+  samples=17  round trip p50=210 p95=848 max=848 ms | GPU p50=166 p95=172 ms
+emulated 10 phones (tasks [1, 2, 0, 1, 2, 0, 1, 2, 0, 1]): req=600 err=0 p50=132 p95=264 max=321 ms
+--- real phone during: +10 phones, single-task mix (battery, plate, brake)
+  samples=61  round trip p50=277 p95=324 max=354 ms | GPU p50=174 p95=191 ms
+emulated 10 phones (tasks [3, 3, 3, 3, 3, 3, 3, 3, 3, 3]): req=344 err=0 p50=1803 p95=1816 max=1949 ms
+--- real phone during: +10 phones, any-item mode
+  samples=22  round trip p50=1796 p95=1861 max=1907 ms | GPU p50=1671 p95=1756 ms
+ALLDONE

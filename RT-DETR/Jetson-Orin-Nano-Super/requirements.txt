@@ -1,0 +1,9 @@
+# Python 3.12 virtualenv on the Jetson (JetPack 7.2.1). Versions installed on the test unit.
+# torch comes from the official CUDA 13.0 index:  pip install torch --index-url https://download.pytorch.org/whl/cu130
+torch==2.14.1+cu130
+transformers==5.18.0
+numpy==2.5.3
+safetensors==0.8.0
+fastapi==0.142.2
+uvicorn==0.54.0
+opencv-python-headless

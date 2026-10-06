@@ -1,0 +1,22 @@
+### AUTO mode (task 3, any order)
+ 1 phones x 1 req/s                req=   40 err=  0 rate=  1.0/s  p50=   258 p95=   281 p99=   289 max=   289 ms
+ 5 phones x 1 req/s                req=  173 err=  0 rate=  4.3/s  p50=  1160 p95=  1183 p99=  1190 max=  1201 ms
+10 phones x 1 req/s                req=  180 err=  0 rate=  4.5/s  p50=  2329 p95=  2361 p99=  2430 max=  2445 ms
+15 phones x 1 req/s                req=  185 err=  0 rate=  4.6/s  p50=  3497 p95=  3615 p99=  3665 max=  3676 ms
+### saturation, auto
+saturation,  1 in flight           req=   80 err=  0 rate=  4.0/s  p50=   251 p95=   266 p99=   279 max=   279 ms
+saturation,  2 in flight           req=   86 err=  0 rate=  4.3/s  p50=   466 p95=   513 p99=   569 max=   569 ms
+saturation,  4 in flight           req=   89 err=  0 rate=  4.5/s  p50=   932 p95=   964 p99=   997 max=   997 ms
+saturation, 10 in flight           req=   95 err=  0 rate=  4.8/s  p50=  2316 p95=  2531 p99=  2578 max=  2578 ms
+saturation, 20 in flight           req=  104 err=  0 rate=  5.2/s  p50=  4670 p95=  4970 p99=  4990 max=  5061 ms
+### BATTERY only (task 1)
+ 1 phones x 1 req/s                req=   40 err=  0 rate=  1.0/s  p50=   115 p95=   139 p99=   143 max=   143 ms
+ 5 phones x 1 req/s                req=  200 err=  0 rate=  5.0/s  p50=   148 p95=   231 p99=   267 max=   316 ms
+10 phones x 1 req/s                req=  400 err=  0 rate= 10.0/s  p50=   237 p95=   391 p99=   435 max=   450 ms
+15 phones x 1 req/s                req=  423 err=  0 rate= 10.6/s  p50=  1460 p95=  1528 p99=  1549 max=  1701 ms
+### saturation, battery only
+saturation,  1 in flight           req=  185 err=  0 rate=  9.2/s  p50=   107 p95=   129 p99=   184 max=   195 ms
+saturation,  2 in flight           req=  212 err=  0 rate= 10.6/s  p50=   189 p95=   211 p99=   219 max=   224 ms
+saturation,  4 in flight           req=  205 err=  0 rate= 10.2/s  p50=   400 p95=   418 p99=   425 max=   430 ms
+saturation, 10 in flight           req=  213 err=  0 rate= 10.7/s  p50=   983 p95=  1031 p99=  1098 max=  1104 ms
+saturation, 20 in flight           req=  221 err=  0 rate= 11.1/s  p50=  1947 p95=  2143 p99=  2210 max=  2239 ms

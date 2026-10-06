@@ -1,0 +1,37 @@
+{
+ "classes": [
+  "plate"
+ ],
+ "n_test": 800,
+ "box_mean_iou": 0.9671314993864975,
+ "threshold_sweep": {
+  "0.3": {
+   "ok_on_good": 0.9423076923076923,
+   "false_ok_bad": 0.019305019305019305,
+   "false_ok_none": 0.0071174377224199285,
+   "present_acc": 0.97,
+   "guidance_acc_when_move_needed": 0.7857142857142857
+  },
+  "0.5": {
+   "ok_on_good": 0.9423076923076923,
+   "false_ok_bad": 0.019305019305019305,
+   "false_ok_none": 0.0071174377224199285,
+   "present_acc": 0.97125,
+   "guidance_acc_when_move_needed": 0.7819548872180451
+  },
+  "0.7": {
+   "ok_on_good": 0.9423076923076923,
+   "false_ok_bad": 0.019305019305019305,
+   "false_ok_none": 0.0071174377224199285,
+   "present_acc": 0.97,
+   "guidance_acc_when_move_needed": 0.7669172932330827
+  },
+  "0.85": {
+   "ok_on_good": 0.9384615384615385,
+   "false_ok_bad": 0.019305019305019305,
+   "false_ok_none": 0.0035587188612099642,
+   "present_acc": 0.97,
+   "guidance_acc_when_move_needed": 0.7631578947368421
+  }
+ }
+}

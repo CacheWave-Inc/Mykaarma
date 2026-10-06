@@ -1,0 +1,126 @@
+brake: 16000 train / 600 val loaded in 6s, classes=['brake']
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] You passed `num_labels=1` which is incompatible to the `id2label` map of length `80`.
+Loading weights:   0%|          | 0/526 [00:00<?, ?it/s]Loading weights: 100%|██████████| 526/526 [00:00<00:00, 19313.87it/s]
+[transformers] [1mRTDetrForObjectDetection LOAD REPORT[0m from: PekingU/rtdetr_r18vd
+Key                                        | Status   |                                                                                        
+-------------------------------------------+----------+----------------------------------------------------------------------------------------
+model.decoder.class_embed.{0, 1, 2}.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([80]) vs model:torch.Size([1])          
+model.denoising_class_embed.weight         | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([81, 256]) vs model:torch.Size([2, 256])
+model.decoder.class_embed.{0, 1, 2}.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([80, 256]) vs model:torch.Size([1, 256])
+model.enc_score_head.bias                  | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([80]) vs model:torch.Size([1])          
+model.enc_score_head.weight                | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([80, 256]) vs model:torch.Size([1, 256])
+
+Notes:
+- MISMATCH:	ckpt weights were loaded, but they did not match the original empty weight shapes.
+  it 100/6000 loss 31.805 30s
+  it 200/6000 loss 6.135 54s
+  it 300/6000 loss 6.257 77s
+  it 400/6000 loss 4.693 100s
+  it 500/6000 loss 4.195 123s
+epoch 0 train_loss 4.195 val_loss 1.377 best 1.377 124s
+  it 600/6000 loss 4.695 147s
+  it 700/6000 loss 4.492 170s
+  it 800/6000 loss 4.159 193s
+  it 900/6000 loss 4.418 216s
+  it 1000/6000 loss 4.967 239s
+epoch 1 train_loss 4.967 val_loss 1.126 best 1.126 240s
+  it 1100/6000 loss 4.496 264s
+  it 1200/6000 loss 4.097 287s
+  it 1300/6000 loss 4.220 309s
+  it 1400/6000 loss 4.224 332s
+  it 1500/6000 loss 4.104 356s
+epoch 2 train_loss 4.104 val_loss 1.073 best 1.073 357s
+  it 1600/6000 loss 3.973 380s
+  it 1700/6000 loss 3.812 403s
+  it 1800/6000 loss 4.057 426s
+  it 1900/6000 loss 4.747 449s
+  it 2000/6000 loss 4.819 471s
+epoch 3 train_loss 4.819 val_loss 0.998 best 0.998 473s
+  it 2100/6000 loss 4.487 495s
+  it 2200/6000 loss 3.884 518s
+  it 2300/6000 loss 3.821 541s
+  it 2400/6000 loss 4.375 565s
+  it 2500/6000 loss 3.962 588s
+epoch 4 train_loss 3.962 val_loss 0.969 best 0.969 589s
+  it 2600/6000 loss 4.120 612s
+  it 2700/6000 loss 3.892 635s
+  it 2800/6000 loss 3.826 658s
+  it 2900/6000 loss 3.940 681s
+  it 3000/6000 loss 3.849 705s
+epoch 5 train_loss 3.849 val_loss 0.910 best 0.910 706s
+  it 3100/6000 loss 4.084 729s
+  it 3200/6000 loss 4.257 751s
+  it 3300/6000 loss 3.799 774s
+  it 3400/6000 loss 3.847 797s
+  it 3500/6000 loss 3.681 820s
+epoch 6 train_loss 3.681 val_loss 0.892 best 0.892 821s
+  it 3600/6000 loss 4.016 844s
+  it 3700/6000 loss 3.963 867s
+  it 3800/6000 loss 3.970 890s
+  it 3900/6000 loss 4.389 913s
+  it 4000/6000 loss 4.024 936s
+epoch 7 train_loss 4.024 val_loss 0.890 best 0.890 937s
+  it 4100/6000 loss 3.750 960s
+  it 4200/6000 loss 3.718 983s
+  it 4300/6000 loss 3.902 1006s
+  it 4400/6000 loss 3.462 1028s
+  it 4500/6000 loss 3.667 1051s
+epoch 8 train_loss 3.667 val_loss 0.834 best 0.834 1053s
+  it 4600/6000 loss 3.846 1076s
+  it 4700/6000 loss 3.769 1098s
+  it 4800/6000 loss 3.497 1121s
+  it 4900/6000 loss 3.922 1146s
+  it 5000/6000 loss 3.603 1170s
+epoch 9 train_loss 3.603 val_loss 0.825 best 0.825 1171s
+  it 5100/6000 loss 4.008 1194s
+  it 5200/6000 loss 3.714 1218s
+  it 5300/6000 loss 3.349 1241s
+  it 5400/6000 loss 3.605 1264s
+  it 5500/6000 loss 3.638 1287s
+epoch 10 train_loss 3.638 val_loss 0.811 best 0.811 1288s
+  it 5600/6000 loss 3.819 1311s
+  it 5700/6000 loss 3.869 1334s
+  it 5800/6000 loss 3.599 1357s
+  it 5900/6000 loss 3.809 1385s
+  it 6000/6000 loss 3.914 1415s
+epoch 11 train_loss 3.914 val_loss 0.813 best 0.811 1416s
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 24.82it/s]
+{
+ "classes": [
+  "brake"
+ ],
+ "n_test": 800,
+ "box_mean_iou": 0.9824023776684739,
+ "threshold_sweep": {
+  "0.3": {
+   "ok_on_good": 1.0,
+   "false_ok_bad": 0.07251908396946564,
+   "false_ok_none": 0.0,
+   "present_acc": 0.985,
+   "guidance_acc_when_move_needed": 0.6460905349794238
+  },
+  "0.5": {
+   "ok_on_good": 1.0,
+   "false_ok_bad": 0.07251908396946564,
+   "false_ok_none": 0.0,
+   "present_acc": 0.98625,
+   "guidance_acc_when_move_needed": 0.6419753086419753
+  },
+  "0.7": {
+   "ok_on_good": 1.0,
+   "false_ok_bad": 0.07251908396946564,
+   "false_ok_none": 0.0,
+   "present_acc": 0.9875,
+   "guidance_acc_when_move_needed": 0.6378600823045267
+  },
+  "0.85": {
+   "ok_on_good": 1.0,
+   "false_ok_bad": 0.07251908396946564,
+   "false_ok_none": 0.0,
+   "present_acc": 0.985,
+   "guidance_acc_when_move_needed": 0.6296296296296297
+  }
+ }
+}
+total 1419s

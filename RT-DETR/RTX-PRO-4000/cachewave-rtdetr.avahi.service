@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+<service-group>
+  <name replace-wildcards="yes">CacheWave Edge Node RT-DETR (%h)</name>
+  <service>
+    <type>_cachewave-triton._tcp</type>
+    <port>8100</port>
+    <txt-record>proto=http</txt-record>
+    <txt-record>api=kserve-v2</txt-record>
+    <txt-record>model=rtdetr_inspect</txt-record>
+    <txt-record>engine=rtdetr</txt-record>
+    <txt-record>ver=1</txt-record>
+  </service>
+</service-group>

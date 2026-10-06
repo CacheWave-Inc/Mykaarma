@@ -1,0 +1,37 @@
+{
+ "classes": [
+  "brake"
+ ],
+ "n_test": 800,
+ "box_mean_iou": 0.9824023776684739,
+ "threshold_sweep": {
+  "0.3": {
+   "ok_on_good": 1.0,
+   "false_ok_bad": 0.07251908396946564,
+   "false_ok_none": 0.0,
+   "present_acc": 0.985,
+   "guidance_acc_when_move_needed": 0.6460905349794238
+  },
+  "0.5": {
+   "ok_on_good": 1.0,
+   "false_ok_bad": 0.07251908396946564,
+   "false_ok_none": 0.0,
+   "present_acc": 0.98625,
+   "guidance_acc_when_move_needed": 0.6419753086419753
+  },
+  "0.7": {
+   "ok_on_good": 1.0,
+   "false_ok_bad": 0.07251908396946564,
+   "false_ok_none": 0.0,
+   "present_acc": 0.9875,
+   "guidance_acc_when_move_needed": 0.6378600823045267
+  },
+  "0.85": {
+   "ok_on_good": 1.0,
+   "false_ok_bad": 0.07251908396946564,
+   "false_ok_none": 0.0,
+   "present_acc": 0.985,
+   "guidance_acc_when_move_needed": 0.6296296296296297
+  }
+ }
+}

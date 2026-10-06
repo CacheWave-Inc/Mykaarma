@@ -1,0 +1,25 @@
+--- transformers/models/rt_detr/modeling_rt_detr.py.orig	2026-10-05 16:19:16.807791418 -0700
++++ transformers/models/rt_detr/modeling_rt_detr.py	2026-10-05 16:19:16.827792093 -0700
+@@ -1629,14 +1629,17 @@
+         # Prepare encoder inputs (by flattening)
+         source_flatten = []
+         spatial_shapes_list = []
+-        spatial_shapes = torch.empty((len(sources), 2), device=device, dtype=torch.long)
++        # CacheWave patch: build spatial_shapes once per input size instead of 4 host->device copies on every forward (needed for CUDA graphs, cheaper on slow CPUs)
+         for level, source in enumerate(sources):
+             height, width = source.shape[-2:]
+-            spatial_shapes[level, 0] = height
+-            spatial_shapes[level, 1] = width
+             spatial_shapes_list.append((height, width))
+-            source = source.flatten(2).transpose(1, 2)
+-            source_flatten.append(source)
++            source_flatten.append(source.flatten(2).transpose(1, 2))
++        if not hasattr(self, "_cw_ss"):
++            self._cw_ss = {}
++        _key = (tuple(spatial_shapes_list), str(device))
++        if _key not in self._cw_ss:
++            self._cw_ss[_key] = torch.tensor(spatial_shapes_list, device=device, dtype=torch.long)
++        spatial_shapes = self._cw_ss[_key]
+         source_flatten = torch.cat(source_flatten, 1)
+         level_start_index = torch.cat((spatial_shapes.new_zeros((1,)), spatial_shapes.prod(1).cumsum(0)[:-1]))
+

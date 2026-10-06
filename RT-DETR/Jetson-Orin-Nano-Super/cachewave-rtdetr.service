@@ -1,0 +1,14 @@
+[Unit]
+Description=CacheWave RT-DETR inference server (Jetson)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+# Change User and the path to your own user and install folder.
+User=cw-car
+ExecStart=/home/cw-car/rtdetr/run_rtdetr.sh
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

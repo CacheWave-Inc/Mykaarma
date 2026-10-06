@@ -1,0 +1,102 @@
+battery: 16000 train / 600 val loaded in 6s, classes=['battery']
+[transformers] You passed `num_labels=1` which is incompatible to the `id2label` map of length `80`.
+Loading weights:   0%|          | 0/526 [00:00<?, ?it/s]Loading weights: 100%|██████████| 526/526 [00:00<00:00, 6299.62it/s]
+[transformers] [1mRTDetrForObjectDetection LOAD REPORT[0m from: PekingU/rtdetr_r18vd
+Key                                        | Status   |                                                                                        
+-------------------------------------------+----------+----------------------------------------------------------------------------------------
+model.enc_score_head.bias                  | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([80]) vs model:torch.Size([1])          
+model.decoder.class_embed.{0, 1, 2}.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([80, 256]) vs model:torch.Size([1, 256])
+model.decoder.class_embed.{0, 1, 2}.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([80]) vs model:torch.Size([1])          
+model.denoising_class_embed.weight         | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([81, 256]) vs model:torch.Size([2, 256])
+model.enc_score_head.weight                | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([80, 256]) vs model:torch.Size([1, 256])
+
+Notes:
+- MISMATCH:	ckpt weights were loaded, but they did not match the original empty weight shapes.
+real frames: 390 (92 with a battery box, 298 negatives)
+  it 100/4000 loss 12.458 40s
+  it 200/4000 loss 6.766 73s
+  it 300/4000 loss 6.639 106s
+  it 400/4000 loss 7.804 139s
+  it 500/4000 loss 6.117 172s
+epoch 0 train_loss 6.117 val_loss 2.347 best 2.347 174s
+  it 600/4000 loss 5.916 208s
+  it 700/4000 loss 5.179 242s
+  it 800/4000 loss 5.231 276s
+  it 900/4000 loss 6.688 310s
+  it 1000/4000 loss 6.602 344s
+epoch 1 train_loss 6.602 val_loss 2.110 best 2.110 346s
+  it 1100/4000 loss 5.532 380s
+  it 1200/4000 loss 5.994 413s
+  it 1300/4000 loss 5.824 446s
+  it 1400/4000 loss 5.130 480s
+  it 1500/4000 loss 6.618 514s
+epoch 2 train_loss 6.618 val_loss 1.763 best 1.763 516s
+  it 1600/4000 loss 5.263 550s
+  it 1700/4000 loss 4.837 584s
+  it 1800/4000 loss 5.417 619s
+  it 1900/4000 loss 5.385 654s
+  it 2000/4000 loss 4.464 688s
+epoch 3 train_loss 4.464 val_loss 1.644 best 1.644 691s
+  it 2100/4000 loss 4.676 724s
+  it 2200/4000 loss 3.960 758s
+  it 2300/4000 loss 4.651 791s
+  it 2400/4000 loss 5.025 826s
+  it 2500/4000 loss 5.460 861s
+epoch 4 train_loss 5.460 val_loss 1.495 best 1.495 863s
+  it 2600/4000 loss 4.595 897s
+  it 2700/4000 loss 4.595 932s
+  it 2800/4000 loss 4.899 966s
+  it 2900/4000 loss 4.471 999s
+  it 3000/4000 loss 4.253 1033s
+epoch 5 train_loss 4.253 val_loss 1.398 best 1.398 1035s
+  it 3100/4000 loss 4.626 1068s
+  it 3200/4000 loss 4.785 1101s
+  it 3300/4000 loss 4.994 1135s
+  it 3400/4000 loss 5.008 1168s
+  it 3500/4000 loss 4.718 1202s
+epoch 6 train_loss 4.718 val_loss 1.388 best 1.388 1204s
+  it 3600/4000 loss 4.244 1239s
+  it 3700/4000 loss 4.183 1273s
+  it 3800/4000 loss 4.090 1307s
+  it 3900/4000 loss 4.596 1340s
+  it 4000/4000 loss 4.538 1374s
+epoch 7 train_loss 4.538 val_loss 1.321 best 1.321 1376s
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 23.44it/s]
+{
+ "classes": [
+  "battery"
+ ],
+ "n_test": 800,
+ "box_mean_iou": 0.9643372868120376,
+ "threshold_sweep": {
+  "0.3": {
+   "ok_on_good": 0.9415204678362573,
+   "false_ok_bad": 0.011450381679389313,
+   "false_ok_none": 0.0,
+   "present_acc": 0.97625,
+   "guidance_acc_when_move_needed": 0.6867924528301886
+  },
+  "0.5": {
+   "ok_on_good": 0.9415204678362573,
+   "false_ok_bad": 0.011450381679389313,
+   "false_ok_none": 0.0,
+   "present_acc": 0.97625,
+   "guidance_acc_when_move_needed": 0.6830188679245283
+  },
+  "0.7": {
+   "ok_on_good": 0.9415204678362573,
+   "false_ok_bad": 0.011450381679389313,
+   "false_ok_none": 0.0,
+   "present_acc": 0.97375,
+   "guidance_acc_when_move_needed": 0.6679245283018868
+  },
+  "0.85": {
+   "ok_on_good": 0.9239766081871345,
+   "false_ok_bad": 0.011450381679389313,
+   "false_ok_none": 0.0,
+   "present_acc": 0.9675,
+   "guidance_acc_when_move_needed": 0.6566037735849056
+  }
+ }
+}
+total 1380s

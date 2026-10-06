@@ -1,0 +1,23 @@
+### AUTO
+ 1 phones x 1 req/s                req=   40 err=  0 rate=  1.0/s  p50=   196 p95=   213 p99=   219 max=   219 ms
+ 5 phones x 1 req/s                req=  200 err=  0 rate=  5.0/s  p50=   414 p95=   637 p99=   669 max=   675 ms
+10 phones x 1 req/s                req=  249 err=  0 rate=  6.2/s  p50=  1649 p95=  1666 p99=  1770 max=  1773 ms
+15 phones x 1 req/s                req=  255 err=  0 rate=  6.4/s  p50=  2471 p95=  2533 p99=  2634 max=  2637 ms
+### sat auto
+saturation,  1 in flight           req=   78 err=  0 rate=  5.2/s  p50=   197 p95=   205 p99=   213 max=   213 ms
+saturation,  2 in flight           req=   92 err=  0 rate=  6.1/s  p50=   329 p95=   340 p99=   375 max=   375 ms
+saturation,  4 in flight           req=   94 err=  0 rate=  6.3/s  p50=   659 p95=   713 p99=   749 max=   749 ms
+saturation, 10 in flight           req=   99 err=  0 rate=  6.6/s  p50=  1646 p95=  1809 p99=  1898 max=  1898 ms
+saturation, 20 in flight           req=  108 err=  0 rate=  7.2/s  p50=  3294 p95=  3568 p99=  3578 max=  3629 ms
+### BATTERY
+ 1 phones x 1 req/s                req=   40 err=  0 rate=  1.0/s  p50=    92 p95=   135 p99=   274 max=   274 ms
+ 5 phones x 1 req/s                req=  200 err=  0 rate=  5.0/s  p50=    94 p95=   145 p99=   160 max=   174 ms
+10 phones x 1 req/s                req=  400 err=  0 rate= 10.0/s  p50=   102 p95=   135 p99=   171 max=   200 ms
+15 phones x 1 req/s                req=  600 err=  0 rate= 15.0/s  p50=   147 p95=   212 p99=   245 max=   280 ms
+### sat battery
+saturation,  1 in flight           req=  166 err=  0 rate= 11.1/s  p50=    90 p95=   106 p99=   121 max=   135 ms
+saturation,  2 in flight           req=  258 err=  0 rate= 17.2/s  p50=   116 p95=   124 p99=   138 max=   167 ms
+saturation,  4 in flight           req=  260 err=  0 rate= 17.3/s  p50=   232 p95=   240 p99=   265 max=   294 ms
+saturation, 10 in flight           req=  265 err=  0 rate= 17.7/s  p50=   582 p95=   591 p99=   669 max=   703 ms
+saturation, 20 in flight           req=  274 err=  0 rate= 18.3/s  p50=  1164 p95=  1271 p99=  1301 max=  1363 ms
+DONE
